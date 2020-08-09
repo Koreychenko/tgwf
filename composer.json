@@ -1,0 +1,59 @@
+{
+    "name": "koreychenko/tgwf",
+    "description": "Framework for building complex workflow bots for Telegram",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "telegram",
+        "bot",
+        "workflow"
+    ],
+    "authors": [
+        {
+            "name": "Max Koreychenko",
+            "email": "koreychenko@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "support": {
+        "email": "koreychenko@gmail.com",
+        "docs": "https://github.com/koreychenko/tgwf",
+        "source": "https://github.com/koreychenko/tgwf"
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6.0",
+        "psr/http-server-middleware": "^1.0",
+        "symfony/cache": "^5.1",
+        "symfony/form": "^5.0",
+        "symfony/validator": "^5.0"
+    },
+    "require-dev": {
+        "phpspec/prophecy": "^1.10.3",
+        "phpunit/phpunit": "^7.5.20 || ^8.5.2 || ^9.0.1",
+        "squizlabs/php_codesniffer": "^2.9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TelegramWorkflow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TelegramWorkflow\\Test\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    }
+}
