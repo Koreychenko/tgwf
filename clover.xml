@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596963157">
-  <project timestamp="1596963157">
+<coverage generated="1596964409">
+  <project timestamp="1596964409">
     <file name="/var/www/html/src/Entity/Action.php">
       <class name="TelegramWorkflow\Entity\Action" namespace="global">
         <metrics complexity="21" methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="19" elements="43" coveredelements="21"/>
